@@ -1,0 +1,28 @@
+{
+  "name": "fullstackopen2018-osa3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SusiSusi/FullStackOpen2018-osa3.git"
+  },
+  "author": "Suvi Sipilä",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SusiSusi/FullStackOpen2018-osa3/issues"
+  },
+  "homepage": "https://github.com/SusiSusi/FullStackOpen2018-osa3#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
