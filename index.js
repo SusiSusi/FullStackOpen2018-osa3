@@ -6,6 +6,7 @@ const cors = require('cors')
 
 app.use(cors())
 app.use(bodyParser.json())
+app.use(express.static('build'))
 
 app.use(morgan( (tokens, req, res) => {
     return [
@@ -43,9 +44,9 @@ let persons = [
     }
 ]
 
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
     res.send('<h1>Hello World!</h1>')
-})
+})*/
 
 app.get('/api/persons', (req, res) => {
     res.json(persons)
