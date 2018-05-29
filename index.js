@@ -24,22 +24,22 @@ app.use(morgan( (tokens, req, res) => {
 let persons = [
     {
         name: "Arto Hellas",
-        number: "040-123456",
+        phone: "040-123456",
         id: 1
     },
     {
         name: "Martti Tienari",
-        number: "040-123456",
+        phone: "040-123456",
         id: 2
     },
     {
         name: "Arto Järvinen",
-        number: "040-123456",
+        phone: "040-123456",
         id: 3
     },
     {
         name: "Lea Kutvonen",
-        number: "040-123456",
+        phone: "040-123456",
         id: 4
     }
 ]
@@ -80,7 +80,7 @@ app.post('/api/persons', (req, res) => {
     const body = req.body
     const newId = Math.floor(Math.random() * (persons.length - 600) + 600)
 
-    if (body.name === undefined || body.number === undefined) {
+    if (body.name === undefined || body.phone === undefined) {
         return res.status(400).json({ error: 'Missing name or number' })
     }
 
@@ -90,7 +90,7 @@ app.post('/api/persons', (req, res) => {
 
     const person = {
         name: body.name,
-        number: body.number,
+        phone: body.number,
         id: newId
     }
 
