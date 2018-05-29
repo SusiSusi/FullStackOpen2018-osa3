@@ -90,7 +90,7 @@ app.post('/api/persons', (req, res) => {
 
     const person = {
         name: body.name,
-        phone: body.number,
+        phone: body.phone,
         id: newId
     }
 
