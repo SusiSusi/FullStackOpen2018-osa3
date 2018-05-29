@@ -20,29 +20,6 @@ app.use(morgan( (tokens, req, res) => {
     ].join(' ')
   }))
 
-let persons = [
-    {
-        name: "Arto Hellas",
-        phone: "040-123456",
-        id: 1
-    },
-    {
-        name: "Martti Tienari",
-        phone: "040-123456",
-        id: 2
-    },
-    {
-        name: "Arto Järvinen",
-        phone: "040-123456",
-        id: 3
-    },
-    {
-        name: "Lea Kutvonen",
-        phone: "040-123456",
-        id: 4
-    }
-]
-
 /*app.get('/', (req, res) => {
     res.send('<h1>Hello World!</h1>')
 })*/
